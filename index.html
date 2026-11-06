@@ -103,30 +103,42 @@ footer{color:var(--mute);font-size:12px;margin-top:28px}
 .cm-status{font-size:13px;color:var(--mute)}
 </style></head><body>
 
+<style>
+.mains{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media(max-width:700px){.mains{grid-template-columns:1fr}}
+.mains figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px}
+.mains img{width:100%;display:block}
+.mains figcaption{font:600 13px/1.3 var(--body);color:#25282a;margin-top:6px;text-align:center}
+.slot.wide{grid-template-columns:1fr}
+.cmp{width:100%;border-collapse:collapse;font-size:14px}
+.cmp td,.cmp th{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.cmp td:last-child{background:var(--ok-bg)}
+</style>
+
 <div class="wrap">
 <header>
   <div>
     <div class="eyebrow">megababy · Triciclo YT-072 gris · Amazon US</div>
-    <h1>Galería del listing: entrega parcial</h1>
-    <p class="lead">3 de noviembre de 2026. Les compartimos las imágenes terminadas, por qué cada una dice lo que dice, y las fotos que necesitamos para cerrar las que faltan.</p>
+    <h1>Galería del listing: entrega completa</h1>
+    <p class="lead">6 de noviembre de 2026. Las 9 imágenes de la galería, con 3 opciones de imagen principal, y por qué cada una dice lo que dice.</p>
   </div>
   <div class="summary">
-    <div class="stat"><b>6 de 9</b><span>imágenes diseñadas</span><div class="bar"><i></i></div></div>
-    <div class="stat"><b>3</b><span>imágenes esperando fotos (slots 7, 8 y 9)</span></div>
-    <div class="stat"><b>12</b><span>fotos con fondo blanco que necesitamos</span></div>
-    <div class="stat"><b>4</b><span>datos para confirmar con ustedes o con el proveedor</span></div>
+    <div class="stat"><b>9 de 9</b><span>imágenes diseñadas</span><div class="bar"><i style="width:100%"></i></div></div>
+    <div class="stat"><b>3</b><span>opciones de imagen principal para elegir</span></div>
+    <div class="stat"><b>0</b><span>de los 6 competidores muestran el test de laboratorio en la galería</span></div>
+    <div class="stat"><b>14</b><span>características resumidas en la última imagen</span></div>
   </div>
   <nav class="strip" aria-label="Imágenes">
-    <a href="#slot1"><span class="dot d-ok"></span>1 Main</a>
+    <a href="#slot1"><span class="dot d-warn"></span>1 Main (elegir)</a>
     <a href="#slot2"><span class="dot d-ok"></span>2 You steer</a>
     <a href="#slot3"><span class="dot d-ok"></span>3 Seguridad</a>
-    <a href="#slot4"><span class="dot d-ok"></span>4 Vs cochecito</a>
+    <a href="#slot4"><span class="dot d-ok"></span>4 Push or Pedal</a>
     <a href="#slot5"><span class="dot d-ok"></span>5 Cara a cara</a>
     <a href="#slot6"><span class="dot d-ok"></span>6 Paseo</a>
-    <a href="#slot7"><span class="dot d-miss"></span>7 Pedales</a>
-    <a href="#slot8"><span class="dot d-miss"></span>8 Limpieza</a>
-    <a href="#slot9"><span class="dot d-miss"></span>9 Caja y medidas</a>
-    <a href="#pedidos"><span class="dot d-miss"></span>Lo que necesitamos</a>
+    <a href="#slot7"><span class="dot d-ok"></span>7 Apoyapiés</a>
+    <a href="#slot8"><span class="dot d-ok"></span>8 Limpieza</a>
+    <a href="#slot9"><span class="dot d-ok"></span>9 Medidas y caja</a>
+    <a href="#competencia"><span class="dot d-ok"></span>Vs competencia</a>
   </nav>
 </header>
 
@@ -137,74 +149,75 @@ footer{color:var(--mute);font-size:12px;margin-top:28px}
   <h2 style="margin-top:6px">La seguridad del chico, para la tranquilidad de los padres</h2>
   <div class="thesis">
     <div><h3>A quién le hablamos</h3><p>A la mamá cuyo hijo de 1 a 3 años ya no quiere ir en el cochecito y todavía no pedalea. En sus palabras: <q>WORTH IT, especially if toddler hates a stroller</q>. El segundo comprador son los abuelos que lo regalan para el primer cumpleaños.</p></div>
-    <div><h3>Qué duda decide la compra</h3><p>Le preguntamos a Alexa for Shopping qué frena la compra en los dos líderes (JMMD y EOOWOY). La duda madre es que la manija del adulto maneje y no se afloje. La sigue que le quede chico al nene.</p></div>
-    <div><h3>Qué hacemos distinto</h3><p>5 de 6 competidores usan la segunda imagen para una rueda de modos ("8-in-1"). Nosotros la usamos para responder esa duda, y somos los únicos que muestran el test de laboratorio en la galería.</p></div>
+    <div><h3>Qué duda decide la compra</h3><p>Le preguntamos a Alexa for Shopping qué frena la compra en los dos líderes (JMMD y EOOWOY). La duda madre es que la manija del adulto maneje y no se afloje. La siguen que le quede chico al nene y si se pliega.</p></div>
+    <div><h3>Qué hacemos distinto</h3><p>5 de 6 competidores usan la segunda imagen para una rueda de modos ("8-in-1"). Nosotros la usamos para responder la duda madre, y somos los únicos que muestran el test de laboratorio en la galería.</p></div>
   </div>
 </section>
 
 <!-- SLOT 1 -->
-<section class="slot" id="slot1" data-comment-target>
-  <div class="media"><img src="img/s1.png" alt="Main: triciclo megababy gris con un chico sentado, fondo blanco"></div>
+<section class="slot wide" id="slot1" data-comment-target>
   <div>
-    <div class="top"><span class="num">Slot 1</span><h3>Main image</h3><span class="pill p-ok">Lista</span></div>
-    <p class="q">Duda que responde: ¿qué es?</p>
-    <ul class="why">
-      <li><span class="tag">Competencia</span><span>Varios competidores le suman miniaturas de modos encima a la Main. La nuestra va limpia: el triciclo de 3/4, con la capota y la manija del adulto a la vista.</span></li>
-      <li><span class="tag">Avatar</span><span>Un chico feliz y con casco transmite la tesis de la marca desde el primer click.</span></li>
+    <div class="top"><span class="num">Slot 1</span><h3>Main image: 3 opciones</h3><span class="pill p-warn">Para elegir</span></div>
+    <p class="q">Duda que responde: ¿qué es? Es la imagen que decide el click en los resultados de búsqueda.</p>
+    <div class="mains">
+      <figure><img src="img/m1.png" alt="Opción A: nene en el triciclo"><figcaption>Opción A · Nene</figcaption></figure>
+      <figure><img src="img/m2.png" alt="Opción B: nena con muñeca y conejo"><figcaption>Opción B · Nena</figcaption></figure>
+      <figure><img src="img/m3.png" alt="Opción C: nena en dos ángulos"><figcaption>Opción C · Nena, dos ángulos</figcaption></figure>
+    </div>
+    <ul class="why" style="margin-top:16px">
+      <li><span class="tag">Competencia</span><span>Varios competidores le suman miniaturas de modos encima a la imagen principal. Las nuestras van limpias, con la capota, la manija del adulto y los dos canastos a la vista.</span></li>
+      <li><span class="tag">Avatar</span><span>Un chico feliz, con casco y arnés, transmite la tesis de la marca desde el primer click: seguro y divertido.</span></li>
+      <li><span class="tag">Para decidir</span><span>A muestra el producto más limpio. B suma calidez y muestra los canastos en uso. C muestra el triciclo de frente y de costado.</span></li>
     </ul>
-    <div class="note" style="background:var(--greige)">Vamos a preparar también una opción B de la Main, con el triciclo junto a su caja.</div>
+    <div class="note" style="background:var(--greige)">Dejen en los comentarios qué opción prefieren.</div>
     <div class="cm" data-slot="1"><h4>Comentarios sobre la imagen 1</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
 </section>
 
 <!-- SLOT 2 -->
 <section class="slot" id="slot2" data-comment-target>
-  <div class="media"><img src="img/s2.jpg" alt="Slot 2: You steer. They have fun."></div>
+  <div class="media"><img src="img/s2.png" alt="Slot 2: You steer. They have fun."></div>
   <div>
-    <div class="top"><span class="num">Slot 2</span><h3>Los 3 beneficios + Safety-tested</h3><span class="pill p-ok">Lista</span></div>
+    <div class="top"><span class="num">Slot 2</span><h3>Los beneficios principales + Safety-tested</h3><span class="pill p-ok">Lista</span></div>
     <p class="q">Duda que responde: ¿la manija maneja de verdad? ¿Es seguro? ¿Le va a quedar chico?</p>
-    <div class="copy"><div class="h1">You steer. They have fun.</div><div class="h2">Handle steers the front wheel · Safety-tested (Third-party lab · ASTM F833 · CPSIA) · Ages 1–5 · Up to 66 lb</div></div>
+    <div class="copy"><div class="h1">You steer. They have fun.</div><div class="h2">Ages 1–5 · Up to 66 lb · Handle steers the front wheel · Safety-tested: Third-party lab · ASTM F833 · CPSIA</div></div>
     <ul class="why">
-      <li><span class="tag">Alexa for Shopping</span><span>En EOOWOY, Alexa atribuye el 70% de lo negativo a la manija del adulto (<q>slides down without pushing the button</q>) y aparecen quejas de ruedas que no siguen a la manija. Por eso la primera prueba es que la manija conecta con la rueda delantera, con una línea que se ve.</span></li>
+      <li><span class="tag">Alexa for Shopping</span><span>En EOOWOY, Alexa atribuye el 70% de lo negativo a la manija del adulto y aparecen quejas de ruedas que no siguen a la manija. Por eso mostramos de cerca la conexión de la manija con la rueda delantera: se ve que maneja de verdad.</span></li>
       <li><span class="tag">Alexa for Shopping</span><span>En JMMD, el 80% de lo negativo es <q>size runs small</q>. Las 66 lb de peso máximo responden eso y son las más altas del set: solo EOOWOY muestra peso, y es 55 lb.</span></li>
-      <li><span class="tag">Nadie lo muestra</span><span>Ninguno de los 6 competidores muestra certificados en la galería; los que los tienen los esconden en los bullets. El sello sale del reporte de laboratorio (ASTM F833, CPSIA).</span></li>
+      <li><span class="tag">Nadie lo muestra</span><span>Ninguno de los 6 competidores muestra certificados en la galería. El sello sale del reporte de laboratorio (ASTM F833, CPSIA).</span></li>
       <li><span class="tag">Competencia</span><span>5 de 6 usan esta posición, la más vista después de la Main, para una rueda de modos que hay que descifrar.</span></li>
     </ul>
-    <div class="note client"><b>Falta confirmación del cliente</b>¿Asiento y arnés sirven desde los 12 meses? De eso depende "Ages 1–5". Los compradores reales empiezan a usarlo entre los 9 y los 16 meses.</div>
     <div class="cm" data-slot="2"><h4>Comentarios sobre la imagen 2</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
 </section>
 
 <!-- SLOT 3 -->
 <section class="slot" id="slot3" data-comment-target>
-  <div class="media"><img src="img/s3.jpg" alt="Slot 3: Buckled in. Braked when you stop."></div>
+  <div class="media"><img src="img/s3.png" alt="Slot 3: Buckled in. Braked when you stop."></div>
   <div>
     <div class="top"><span class="num">Slot 3</span><h3>Arnés, barra y frenos</h3><span class="pill p-ok">Lista</span></div>
     <p class="q">Duda que responde: ¿el arnés aguanta? ¿Se queda quieto cuando paro?</p>
-    <div class="copy"><div class="h1">Buckled in. Braked when you stop.</div><div class="h2">5-point harness · Padded front bar · Brakes hold it still</div></div>
+    <div class="copy"><div class="h1">Buckled in. Braked when you stop.</div><div class="h2">Adjustable 3-point harness · Padded front bar · Brakes hold it still</div></div>
     <ul class="why">
-      <li><span class="tag">Alexa for Shopping</span><span>Entre las 5 dudas de EOOWOY está el arnés: <q>the safety belt connector came clean off</q>. Mostramos las 5 correas y a la mamá abrochándolas.</span></li>
-      <li><span class="tag">Reseñas</span><span>Kinder King: <q>there is no brake, so it can be dangerous to let go when stopping</q>. El titular responde justo eso: el triciclo no se va cuando ella para.</span></li>
-      <li><span class="tag">Alexa for Shopping</span><span>En JMMD, una de las 5 dudas es quién frena, el chico o el adulto. Lo vamos a dejar claro en cuanto confirmemos el dato.</span></li>
+      <li><span class="tag">Alexa for Shopping</span><span>Entre las 5 dudas de EOOWOY está el arnés: <q>the safety belt connector came clean off</q>. Mostramos el broche de cerca y a la mamá ajustándolo.</span></li>
+      <li><span class="tag">Reseñas</span><span>Kinder King: <q>there is no brake, so it can be dangerous to let go when stopping</q>. El titular responde justo eso, y la foto muestra el freno trasero en uso.</span></li>
       <li><span class="tag">Nadie lo muestra</span><span>Ningún competidor muestra a un adulto ajustando el arnés. Hablan de seguridad con "thickened steel frame vs others" o con listas de iconos.</span></li>
     </ul>
-    <div class="note client"><b>Falta confirmación del cliente</b>¿Dónde están los frenos y quién los acciona, el adulto o el chico?</div>
     <div class="cm" data-slot="3"><h4>Comentarios sobre la imagen 3</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
 </section>
 
 <!-- SLOT 4 -->
 <section class="slot" id="slot4" data-comment-target>
-  <div class="media"><img src="img/s4.jpg" alt="Slot 4: The ride they'll actually sit in."></div>
+  <div class="media"><img src="img/s4.png" alt="Slot 4: 2-in-1: Push or Pedal"></div>
   <div>
-    <div class="top"><span class="num">Slot 4</span><h3>Cochecito vs triciclo</h3><span class="pill p-ok">Lista</span></div>
-    <p class="q">Duda que responde: ¿es un triciclo o me reemplaza el cochecito?</p>
-    <div class="copy"><div class="h1">The ride they'll actually sit in.</div><div class="h2">You steer from behind · Harness + brakes · They pedal or rest their feet</div></div>
+    <div class="top"><span class="num">Slot 4</span><h3>Dos formas de usarlo</h3><span class="pill p-ok">Lista</span></div>
+    <p class="q">Duda que responde: ¿es un triciclo o me reemplaza el cochecito? ¿Cuánto tiempo le va a servir?</p>
+    <div class="copy"><div class="h1">2-in-1: Push or Pedal</div><div class="h2">You steer from behind · They pedal or rest their feet | They steer on their own · They pedal at their pace</div></div>
     <ul class="why">
-      <li><span class="tag">Alexa for Shopping</span><span>Alexa detecta esta duda en los dos líderes y responde con los motivos para elegirlo antes que un cochecito: chico entretenido, control del adulto, cara a cara.</span></li>
-      <li><span class="tag">Avatar</span><span>El titular sale de una reseña real: <q>It's literally the only stroller he'll sit in for more than 5 minutes</q>.</span></li>
-      <li><span class="tag">Competencia</span><span>Los competidores se comparan contra otras marcas con frases que no pueden probar (<q>Thin, weak steel tubes</q>). Nosotros comparamos contra el cochecito: todo lo que la mamá ya confía, más lo que al chico le encanta.</span></li>
-      <li><span class="tag">Estrategia</span><span>Es la última posición que ve casi todo el mundo: la mayoría no pasa de la cuarta imagen.</span></li>
+      <li><span class="tag">Alexa for Shopping</span><span>"¿Es triciclo o reemplazo del cochecito?" es una de las dudas que Alexa detecta en EOOWOY. La imagen responde las dos cosas a la vez: hoy lo empujás vos, después maneja solo.</span></li>
+      <li><span class="tag">Competencia</span><span>Los competidores muestran 7 u 8 modos en un diagrama difícil de leer. Nosotros mostramos solo los 2 que importan, con fotos reales y cuatro frases cortas.</span></li>
+      <li><span class="tag">Estrategia</span><span>Es la última posición que ve casi todo el mundo: la mayoría no pasa de la cuarta imagen. Por eso cierra el bloque principal con el valor a largo plazo.</span></li>
     </ul>
     <div class="cm" data-slot="4"><h4>Comentarios sobre la imagen 4</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
@@ -212,15 +225,15 @@ footer{color:var(--mute);font-size:12px;margin-top:28px}
 
 <!-- SLOT 5 -->
 <section class="slot" id="slot5" data-comment-target>
-  <div class="media"><img src="img/s5.jpg" alt="Slot 5: Face you. Explore ahead."></div>
+  <div class="media"><img src="img/s5.png" alt="Slot 5: Face you / Explore ahead"></div>
   <div>
     <div class="top"><span class="num">Slot 5</span><h3>Cara a cara</h3><span class="pill p-ok">Lista</span></div>
-    <p class="q">Duda que responde: ¿lo puedo ver mientras andamos?</p>
-    <div class="copy"><div class="h1">Face you. Explore ahead.</div><div class="h2">Seat turns to face you · Backrest adjusts</div></div>
+    <p class="q">Duda que responde: ¿lo puedo ver mientras andamos? ¿Puede descansar?</p>
+    <div class="copy"><div class="h1">Face you · Explore ahead</div><div class="h2">Seat turns to face you · Backrest adjusts · Foot support when facing you · Reclining backrest for restful rides</div></div>
     <ul class="why">
       <li><span class="tag">Alexa for Shopping</span><span>Alexa nombra el cara a cara (<q>bonding</q>) como una de las razones para elegir triciclo en vez de cochecito.</span></li>
-      <li><span class="tag">Competencia</span><span>5 de 6 lo muestran con diagramas de flechas de 360°. Nosotros con dos escenas reales, con el vínculo en primer plano.</span></li>
-      <li><span class="tag">Claridad</span><span>Los textos dicen qué hace cada cosa ("Seat turns to face you") en vez de cómo se llama ("Rotating seat"): se entiende en un segundo, también en el celular.</span></li>
+      <li><span class="tag">Competencia</span><span>5 de 6 lo muestran con diagramas de flechas de 360°. Nosotros mostramos las dos posiciones y lo que cambia para el chico: dónde apoya los pies y cómo descansa.</span></li>
+      <li><span class="tag">Avatar</span><span>El respaldo reclinable responde un momento real del paseo: el chico que se duerme a mitad de camino.</span></li>
     </ul>
     <div class="cm" data-slot="5"><h4>Comentarios sobre la imagen 5</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
@@ -228,123 +241,96 @@ footer{color:var(--mute);font-size:12px;margin-top:28px}
 
 <!-- SLOT 6 -->
 <section class="slot" id="slot6" data-comment-target>
-  <div class="media"><img src="img/s6.jpg" alt="Slot 6: Shade above. Essentials along."></div>
+  <div class="media"><img src="img/s6.png" alt="Slot 6: Shade above. Essentials along."></div>
   <div>
     <div class="top"><span class="num">Slot 6</span><h3>Todo para el paseo</h3><span class="pill p-ok">Lista</span></div>
     <p class="q">Duda que responde: ¿qué trae para salir?</p>
     <div class="copy"><div class="h1">Shade above. Essentials along.</div><div class="h2">Adjustable, foldable canopy · Built-in cup holder · Front storage basket · Rear storage basket</div></div>
     <ul class="why">
       <li><span class="tag">Brief</span><span>Es el "todo a mano" que pide el brief: capota, dos canastos y portavasos.</span></li>
-      <li><span class="tag">Competencia</span><span>Los competidores lo muestran como iconos sueltos. La escena del papá cargando el canasto lo vuelve un momento real del paseo.</span></li>
+      <li><span class="tag">Competencia</span><span>Los competidores lo muestran como iconos sueltos. La escena del papá cargando el canasto lo vuelve un momento real del paseo, y cada etiqueta apunta a su pieza.</span></li>
     </ul>
     <div class="cm" data-slot="6"><h4>Comentarios sobre la imagen 6</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
 </section>
 
 <!-- SLOT 7 -->
-<section class="slot missing" id="slot7" data-comment-target>
-  <div class="media"><div class="ph"><strong>Falta material</strong><div class="h1">Little feet take a break</div><div class="h2">Pedals stop turning while you push</div></div></div>
+<section class="slot" id="slot7" data-comment-target>
+  <div class="media"><img src="img/s7.png" alt="Slot 7: Little feet take a break"></div>
   <div>
-    <div class="top"><span class="num">Slot 7</span><h3>Cuando no pedalea</h3><span class="pill p-miss">Esperando fotos</span></div>
-    <p class="q">Duda que responde: ¿y si todavía no pedalea?</p>
-    <div class="copy"><div class="h1">Little feet take a break</div><div class="h2">Pedals stop turning while you push</div></div>
+    <div class="top"><span class="num">Slot 7</span><h3>Cuando no pedalea</h3><span class="pill p-ok">Lista</span></div>
+    <p class="q">Duda que responde: ¿y si todavía no pedalea? ¿Dónde pone los pies?</p>
+    <div class="copy"><div class="h1">Little feet take a break</div><div class="h2">Feet on the footrests while you push · Footrests fold away · Pedals turn with the front wheel and cannot be disengaged</div></div>
     <ul class="why">
       <li><span class="tag">Brief</span><span>Responde el problema que nombra el brief: el chico que ya no quiere cochecito pero todavía no pedalea.</span></li>
-      <li><span class="tag">Competencia</span><span>RIDYEE lo explica con un diagrama técnico (<q>front pedal clutch</q>). Nosotros lo contamos desde el chico: los pies descansan y los pedales no giran debajo de ellos.</span></li>
+      <li><span class="tag">Reseñas</span><span>Decimos de frente que los pedales giran con la rueda. Así nadie compra esperando otra cosa, que es lo que termina en reseñas de una estrella. Y mostramos la solución: los pies van en el apoyapiés.</span></li>
+      <li><span class="tag">Competencia</span><span>RIDYEE lo explica con un diagrama técnico (<q>front pedal clutch</q>). Nosotros lo contamos desde el chico, con la mamá empujando.</span></li>
     </ul>
-    <div class="need"><h4>Fotos que necesitamos para esta imagen</h4><ul>
-      <li>Mano sacando o poniendo el apoyapiés (fondo blanco)</li>
-      <li>El control que desacopla los pedales, de cerca (ya pedida)</li></ul></div><div class="note client"><b>Falta confirmación del cliente</b>Foto del control que desacopla los pedales.<ul style="display:none">
-    </ul></div>
     <div class="cm" data-slot="7"><h4>Comentarios sobre la imagen 7</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
 </section>
 
 <!-- SLOT 8 -->
-<section class="slot missing" id="slot8" data-comment-target>
-  <div class="media"><div class="ph"><strong>Falta material</strong><div class="h1">Fresh seat. Next adventure.</div><div class="h2">Padding comes off. Into the washer.</div></div></div>
+<section class="slot" id="slot8" data-comment-target>
+  <div class="media"><img src="img/s8.png" alt="Slot 8: Fresh seat. Next adventure."></div>
   <div>
-    <div class="top"><span class="num">Slot 8</span><h3>Limpieza</h3><span class="pill p-miss">Esperando fotos</span></div>
+    <div class="top"><span class="num">Slot 8</span><h3>Limpieza</h3><span class="pill p-ok">Lista</span></div>
     <p class="q">Duda que responde: ¿se lava?</p>
     <div class="copy"><div class="h1">Fresh seat. Next adventure.</div><div class="h2">Padding comes off. Into the washer.</div></div>
     <ul class="why">
       <li><span class="tag">Nadie lo muestra</span><span>Ningún competidor muestra en imagen que la funda se lava. KRIDDO es el único que lo destaca en el texto, y sus compradores lo valoran.</span></li>
-      <li><span class="tag">Avatar</span><span>Con un chico de 1 a 5 años, snacks y derrames son parte de cada paseo. Mostramos la acción (la funda que sale) en vez de un icono.</span></li>
+      <li><span class="tag">Avatar</span><span>Con un chico de 1 a 5 años, snacks y derrames son parte de cada paseo. Mostramos la funda entera fuera del triciclo, en la mano: se entiende sin leer.</span></li>
     </ul>
-    <div class="need"><h4>Fotos que necesitamos para esta imagen</h4><ul>
-      <li>Asiento acolchado puesto (fondo blanco)</li>
-      <li>Mano sacando el asiento acolchado para lavarlo (fondo blanco)</li>
-    </ul></div>
     <div class="cm" data-slot="8"><h4>Comentarios sobre la imagen 8</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
 </section>
 
 <!-- SLOT 9 -->
-<section class="slot missing" id="slot9" data-comment-target>
-  <div class="media"><div class="ph"><strong>Falta material</strong><div class="h1">Sized for little adventures</div><div class="h2">Assembled size · Seat height · Up to 66 lb · In the box</div></div></div>
+<section class="slot" id="slot9" data-comment-target>
+  <div class="media"><img src="img/s9.png" alt="Slot 9: Sized for little adventures"></div>
   <div>
-    <div class="top"><span class="num">Slot 9</span><h3>Qué viene en la caja + medidas</h3><span class="pill p-miss">Esperando fotos y medidas</span></div>
-    <p class="q">Duda que responde: ¿qué recibo? ¿Entra en casa? ¿Le va a quedar chico?</p>
-    <div class="copy"><div class="h1">Sized for little adventures</div><div class="h2">Assembled: __ L × __ W × __ H · Seat height: __ · Up to 66 lb<br>In the box: trike, push handle, canopy, 2 baskets, cup holder<br><small>Adult assembly required. Tools not included.</small></div></div>
+    <div class="top"><span class="num">Slot 9</span><h3>Medidas, características y caja</h3><span class="pill p-ok">Lista</span></div>
+    <p class="q">Duda que responde: ¿entra en casa? ¿Qué trae? ¿Se pliega?</p>
+    <div class="copy"><div class="h1">Sized for little adventures</div><div class="h2">14 características · 32.3 × 21.7 × 25.6 · Adult assembly required. Tools not included. Trike does not fold.</div></div>
     <ul class="why">
-      <li><span class="tag">Alexa for Shopping</span><span><q>Size runs small</q> es la queja número uno de JMMD. Con la altura del asiento, la mamá decide antes de comprar si le va a quedar bien.</span></li>
-      <li><span class="tag">Alexa for Shopping</span><span>Plegarlo es una de las dudas de los dos líderes. El nuestro no se pliega, así que damos las medidas armado para que decida con el dato.</span></li>
-      <li><span class="tag">Avatar</span><span>Los abuelos que regalan quieren saber qué trae la caja y que el armado lo hace un adulto con instrucciones paso a paso.</span></li>
+      <li><span class="tag">Alexa for Shopping</span><span>Plegarlo es una de las dudas de los dos líderes. El nuestro no se pliega, y lo decimos con las medidas al lado para que decida con el dato. Menos devoluciones, menos reseñas de "no entra en el baúl".</span></li>
+      <li><span class="tag">Avatar</span><span>Los abuelos que regalan quieren ver todo lo que trae y la caja en la que llega. La lista de 14 es el resumen para quien llega hasta el final de la galería.</span></li>
+      <li><span class="tag">Competencia</span><span>Los competidores ponen grillas de 8 a 12 iconos en sus primeras imágenes. Nosotros dejamos el inventario completo para el final, cuando el comprador ya está decidiendo.</span></li>
     </ul>
-    <div class="note client"><b>Falta confirmación del proveedor</b>Medidas armado, altura del asiento y distancia asiento-pedales.</div><div class="need"><h4>Fotos que necesitamos para esta imagen (fondo blanco)</h4><ul>
-      <li>Barra de seguridad</li>
-      <li>Manija de empuje</li>
-      <li>Capota</li>
-      <li>Canasto delantero</li>
-      <li>Canasto trasero</li>
-      <li>Barral poniéndose y sacándose (para mostrar que la barra del adulto se saca)</li>
-      <li>Cinturón</li>
-      <li>Broche del cinturón</li>
-      <li>Mano abrochando el cinturón</li>
-    </ul></div>
     <div class="cm" data-slot="9"><h4>Comentarios sobre la imagen 9</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
   </div>
 </section>
 
-<section class="panel" id="pedidos" data-comment-target>
-  <div class="eyebrow">Lo que necesitamos</div>
-  <h2 style="margin-top:6px">Para cerrar las 9 imágenes</h2>
-  <p style="margin-top:10px">Estas son las fotos de detalle que tenían en los renders iniciales, pero no están entre las fotos que nos pasaron. Las necesitamos como fotos reales con fondo blanco, en alta resolución (2000 px o más).</p>
-  <div class="refs">
-    <figure><img src="img/r1.png" alt="Render inicial: manija, capota, barra de seguridad y canasto delantero"><figcaption>Render inicial: manija de empuje, capota, barra de seguridad y canasto delantero.</figcaption></figure>
-    <figure><img src="img/r2.png" alt="Render inicial: tres configuraciones de capota"><figcaption>Render inicial: configuraciones con capota completa, parcial y sin capota.</figcaption></figure>
-  </div>
-  <h3 style="margin:22px 0 8px">Fotos con fondo blanco</h3>
-  <div class="tw"><table>
-    <tr><th>Foto</th><th>Para la imagen</th></tr>
-    <tr><td><span class="check"></span>Barra de seguridad</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Manija de empuje</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Capota</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Canasto delantero</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Canasto trasero</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Barral poniéndose y sacándose</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Broche del cinturón</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Mano abrochando el cinturón</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Cinturón</td><td>9</td></tr>
-    <tr><td><span class="check"></span>Asiento acolchado puesto</td><td>8</td></tr>
-    <tr><td><span class="check"></span>Mano sacando el asiento (para lavar)</td><td>8</td></tr>
-    <tr><td><span class="check"></span>Mano sacando o poniendo el apoyapiés</td><td>7</td></tr>
+<section class="panel" id="competencia" data-comment-target>
+  <div class="eyebrow">Estrategia</div>
+  <h2 style="margin-top:6px">Cómo se compara con la competencia</h2>
+  <p style="margin-top:10px">Analizamos las galerías de 6 competidores (JMMD 8-in-1, JMMD 7-in-1, EOOWOY, Kinderkraft, Kinder King y RIDYEE) y el resumen de reseñas de 7. Esto es lo que hacen ellos y lo que hacemos nosotros.</p>
+  <div class="tw"><table class="cmp">
+    <tr><th>Tema</th><th>Cómo lo hacen ellos</th><th>Cómo lo hacemos nosotros</th></tr>
+    <tr><td><b>Que la manija del adulto maneje</b></td><td>Solo 3 de 6 lo muestran, tarde (Kinderkraft en el slot 5) o en términos técnicos ("60°", "clutch").</td><td>Slot 2, con la conexión manija-rueda de cerca: "Handle steers the front wheel".</td></tr>
+    <tr><td><b>Seguridad</b></td><td>La prometen ("safer", "if safety is your priority") o la listan con iconos.</td><td>Sello Safety-tested con el laboratorio y las normas (slot 2), arnés y freno en uso (slot 3).</td></tr>
+    <tr><td><b>Certificados en la galería</b></td><td>0 de 6. Dos los nombran solo en los bullets.</td><td>Somos los únicos que los muestran.</td></tr>
+    <tr><td><b>Modos ("7-in-1", "8-in-1")</b></td><td>5 de 6 los ponen en el slot 2 como un diagrama que hay que descifrar.</td><td>Solo 2 modos reales, con fotos, en el slot 4: Push or Pedal.</td></tr>
+    <tr><td><b>Edad y peso</b></td><td>Casi todos "18 meses a 5 años". Peso: solo uno (55 lb).</td><td>Ages 1–5 · Up to 66 lb, a la vista en el slot 2.</td></tr>
+    <tr><td><b>Asiento que gira</b></td><td>Diagramas con flechas de 360°.</td><td>Dos posiciones reales y lo que cambia para el chico (slot 5).</td></tr>
+    <tr><td><b>Funda lavable</b></td><td>Nadie lo muestra en imagen.</td><td>Slot 8, con la funda en la mano.</td></tr>
+    <tr><td><b>"All-terrain" / "any surface"</b></td><td>4 de 6 lo prometen.</td><td>No lo decimos: el manual indica superficies lisas.</td></tr>
+    <tr><td><b>Plegado</b></td><td>3 lo muestran en el baúl del auto.</td><td>El nuestro no se pliega y lo decimos claro, con medidas (slot 9).</td></tr>
+    <tr><td><b>Chico con casco y adulto cerca</b></td><td>Varios muestran chicos sin casco, solos o cerca de la calle.</td><td>Casco siempre y adulto siempre cerca, en todas las escenas.</td></tr>
+    <tr><td><b>Identidad de marca</b></td><td>JMMD y EOOWOY tienen literalmente la misma galería.</td><td>Sistema propio de megababy: colores del Brand Guide, tipografía redondeada, luz natural.</td></tr>
   </table></div>
-  <h3 style="margin:22px 0 8px">Datos para confirmar</h3>
-  <div class="tw"><table>
-    <tr><th>Dato</th><th>Dónde se usa</th><th>Quién</th></tr>
-    <tr><td>¿Asiento y arnés sirven desde los 12 meses?</td><td>Imagen 2 ("Ages 1–5")</td><td style="color:var(--miss);font-weight:600">Falta confirmación del cliente</td></tr>
-    <tr><td>¿Dónde están los frenos y quién los acciona?</td><td>Imagen 3</td><td style="color:var(--miss);font-weight:600">Falta confirmación del cliente</td></tr>
-    <tr><td>Foto del control que desacopla los pedales</td><td>Imagen 7</td><td style="color:var(--miss);font-weight:600">Falta confirmación del cliente</td></tr>
-    <tr><td>Medidas armado, altura del asiento y distancia asiento-pedales</td><td>Imagen 9</td><td style="color:var(--miss);font-weight:600">Falta confirmación del proveedor</td></tr>
-  </table></div>
+  <h3 style="margin:22px 0 8px">Próximos pasos</h3>
+  <ul style="margin:0;padding-left:18px">
+    <li>Elegir la imagen principal (A, B o C).</li>
+    <li>Sumar sus comentarios sobre cada imagen.</li>
+    <li>Exportar las 9 imágenes finales a 2000 px para Amazon.</li>
+    <li>Seguir con título, bullets, A+ y preguntas y respuestas para Alexa.</li>
+  </ul>
   <div class="cm" data-slot="general"><h4>Comentarios sobre esta sección</h4><ul class="cm-list" aria-live="polite"><li class="cm-empty">Todavía no hay comentarios.</li></ul><form class="cm-form"><label>Tu nombre<input name="name" maxlength="80" required autocomplete="name"></label><label>Comentario<textarea name="text" maxlength="2000" rows="3" required></textarea></label><button type="submit">Enviar comentario</button><span class="cm-status" role="status"></span></form></div>
 </section>
 
 <footer>Fuentes: manual del triciclo, listing checklist de Mega Baby, respuestas del proveedor, certificado CPC y reporte de laboratorio TQT3253D06E, galerías de 6 competidores, resumen público de reseñas de 7 competidores y respuestas de Alexa for Shopping sobre JMMD 8-in-1 y EOOWOY. Preparado por Dana Kaplansky.</footer>
 </div>
-
-
 <script>
 const ENDPOINT = "https://script.google.com/macros/s/AKfycbwfjoLzAazP9RnXY6IR0_ZzFcAvO_oHE1EvJglN7S2mSpImPRtkM-MK3nWGvw11EFC6mw/exec";
 const NAME_KEY = 'mb-comment-name';
